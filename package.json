@@ -1,7 +1,7 @@
 {
     "name": "symbol-db",
     "private": false,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "main": "./dist/index.umd.cjs",
     "module": "./dist/index.js",
@@ -11,10 +11,15 @@
         "build": "vite build"
     },
     "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "require": "./dist/index.umd.cjs",
-            "import": "./dist/index.js"
+        "./emoji": {
+            "types": "./dist/emoji/index.d.ts",
+            "require": "./dist/emoji.cjs",
+            "import": "./dist/emoji.js"
+        },
+        "./material": {
+            "types": "./dist/material/index.d.ts",
+            "require": "./dist/material.cjs",
+            "import": "./dist/material.js"
         },
         "./*": "./*"
     },
