@@ -1,0 +1,46 @@
+{
+    "name": "symbol-db",
+    "private": false,
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.umd.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.umd.cjs",
+            "import": "./dist/index.js"
+        },
+        "./*": "./*"
+    },
+    "files": [
+        "dist/**"
+    ],
+    "dependencies": {
+    },
+    "peerDependencies": {
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.7.0",
+        "@typescript-eslint/parser": "^7.7.0",
+        "@vitejs/plugin-vue": "^5.0.4",
+        "@vue/eslint-config-typescript": "^13.0.0",
+        "eslint": "^8.57.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-sort-keys-custom-order": "^1.0.5",
+        "eslint-plugin-vue": "^9.25.0",
+        "rollup-plugin-visualizer": "^5.12.0",
+        "typescript": "^5.4.5",
+        "vite": "^5.2.9",
+        "vite-plugin-dts": "^3.8.3"
+    }
+}
