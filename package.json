@@ -1,7 +1,7 @@
 {
     "name": "symbol-db",
     "private": false,
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
     "main": "./dist/index.umd.cjs",
     "module": "./dist/index.js",
@@ -12,12 +12,12 @@
     },
     "exports": {
         "./emoji": {
-            "types": "./dist/emoji/index.d.ts",
+            "types": "./dist/db/emoji.d.ts",
             "require": "./dist/emoji.cjs",
             "import": "./dist/emoji.js"
         },
         "./material": {
-            "types": "./dist/material/index.d.ts",
+            "types": "./dist/db/material.d.ts",
             "require": "./dist/material.cjs",
             "import": "./dist/material.js"
         },
@@ -26,26 +26,20 @@
     "files": [
         "dist/**"
     ],
-    "dependencies": {
-    },
-    "peerDependencies": {
-    },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^7.7.0",
-        "@typescript-eslint/parser": "^7.7.0",
-        "@vitejs/plugin-vue": "^5.0.4",
+        "@eslint/eslintrc": "^3.1.0",
+        "@eslint/js": "^9.7.0",
+        "@vitejs/plugin-vue": "^5.0.5",
         "@vue/eslint-config-typescript": "^13.0.0",
-        "eslint": "^8.57.0",
-        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint": "^9.7.0",
         "eslint-import-resolver-typescript": "^3.6.1",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^6.1.1",
-        "eslint-plugin-sort-keys-custom-order": "^1.0.5",
-        "eslint-plugin-vue": "^9.25.0",
+        "eslint-plugin-import-x": "^3.0.1",
+        "eslint-plugin-promise": "^6.4.0",
+        "eslint-plugin-sort-keys-custom-order": "^2.0.2",
         "rollup-plugin-visualizer": "^5.12.0",
-        "typescript": "^5.4.5",
-        "vite": "^5.2.9",
-        "vite-plugin-dts": "^3.8.3"
+        "typescript": "^5.5.3",
+        "typescript-eslint": "^7.16.0",
+        "vite": "^5.3.3",
+        "vite-plugin-dts": "^3.9.1"
     }
 }

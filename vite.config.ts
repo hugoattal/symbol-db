@@ -16,7 +16,7 @@ export default defineConfig(() => {
                 name: "symbol-db",
                 entry: {
                     emoji: "src/db/emoji.ts",
-                    material: "src/db/material.ts",
+                    material: "src/db/material.ts"
                 }
             },
             rollupOptions: {
